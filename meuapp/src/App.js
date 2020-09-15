@@ -2,6 +2,8 @@ import React from 'react';
 import Produtos from './Produtos';
 import Form from './form/Form';
 import HomeApp from './desafio-components/App';
+import Home from './desafio-usestate/Home';
+
 const luana = {
   cliente: 'Luana',
   idade: 27,
@@ -53,6 +55,9 @@ const App = () => {
     <Form />
 
     <HomeApp />
+
+    <h1>Começa o use state</h1>
+    <Home />
     </>
   );
 };
