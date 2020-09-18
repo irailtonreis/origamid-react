@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Ref = () => {
+const Comentarios = () => {
     const [comentarios, setComentarios] = React.useState([]);
     const [input, setInput] = React.useState('');
     const inputElement = React.useRef();
@@ -31,4 +31,4 @@ const Ref = () => {
   };
   
 
-  export default Ref
+  export default Comentarios

@@ -4,10 +4,7 @@ import Form from './form/Form';
 import HomeApp from './desafio-components/App';
 import Home from './desafio-usestate/Home';
 import HomeProduct from './desafio-usestate/HomeProdutoState';
-<<<<<<< HEAD
 import UseREf from './use-ref/index'
-=======
->>>>>>> 6abfb2486cba699fbe91479acaf9d89cfde410a3
 
 const luana = {
   cliente: 'Luana',
