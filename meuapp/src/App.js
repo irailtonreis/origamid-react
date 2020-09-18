@@ -3,6 +3,8 @@ import Produtos from './Produtos';
 import Form from './form/Form';
 import HomeApp from './desafio-components/App';
 import Home from './desafio-usestate/Home';
+import HomeProduct from './desafio-usestate/HomeProdutoState';
+import UseREf from './use-ref/index'
 
 const luana = {
   cliente: 'Luana',
@@ -58,6 +60,11 @@ const App = () => {
 
     <h1>Começa o use state</h1>
     <Home />
+
+
+    <HomeProduct />
+
+    <UseREf />
     </>
   );
 };
