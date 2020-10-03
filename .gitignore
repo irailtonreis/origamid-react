@@ -1,4 +1,6 @@
 webpack/node_modules
 meuapp/node_modules
 slide-animation/node_modules
+desafio-router/node_modules
+desafio-router/dist
 /dist
