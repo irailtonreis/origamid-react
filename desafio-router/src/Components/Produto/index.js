@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Produto.module.css'
 import Head from '../Head'
+import Button from '../Button';
 import { useParams } from 'react-router-dom';
 
 
@@ -27,22 +28,24 @@ const Produto = () => {
         fetchProduto(`https://ranekapi.origamid.dev/json/api/produto/${id}`)
     }, [id])
 
-    if(loading) return <div>Carregando...</div>
+    if(loading) return <div className="loading"></div>
     if(error) return <p>{error}</p>
     if(produto === null) return null
     return (
         <section className={`${styles.produto} animeLeft`}>
             <Head title={`Ranek | ${produto.nome}`} description={`produto | ${produto.nome}`}  />
-            {produto.fotos.map((foto) => (
-                <img key={foto.src} src={foto.src} alt={foto.titulo} srcset=""/>
-            ))}
-            <div>
-            <h1 className={styles.titulo}>{produto.nome}</h1>
-            <span className={styles.preco}>{produto.preco}</span>
-            <p className={styles.descricao}>{produto.descricao}</p>
+            <div> 
+                {produto.fotos.map((foto) => (
+                    <img key={foto.src} src={foto.src} alt={foto.titulo} srcset=""/>
+                ))}
             </div>
-            
-            
+                
+            <div>
+                <h1 className={styles.titulo}>{produto.nome}</h1>
+                <span className={styles.preco}>{produto.preco}</span>
+                <p className={styles.descricao}>{produto.descricao}</p>
+                <Button width={100}>Comprar</Button>
+            </div>
         </section>
     )
 }
